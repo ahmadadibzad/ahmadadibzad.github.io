@@ -1,0 +1,225 @@
+@import 'bootstrap.min.css';
+@import 'skill-icons.css';
+
+body {
+    font-family: 'Open Sans', Geneva, Verdana, sans-serif
+}
+
+#main-header {
+    height: 100vh;
+    background-image: radial-gradient(circle 993px at 0.5% 50.5%, rgba(137, 171, 245, 0.37) 0%, rgba(245, 247, 252, 1) 100.2%);
+}
+
+.hi {
+    transition: all 1s ease-in;
+    animation: name 1.8s;
+}
+
+.my-name {
+    transition: all 1s ease-in;
+    animation: name 1.9s;
+}
+
+.text-bg-gradient {
+    background: -webkit-linear-gradient(45deg, #1d2671, #c33764);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.my-stack {
+    animation: name 2s;
+}
+
+@keyframes name {
+    0% {
+        transform: translateY(-100px);
+    }
+
+    50% {
+        transform: translateY(80px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes pimg {
+    0% {
+        transform: translateY(-100px);
+    }
+
+    53% {
+        transform: translateY(80px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+.personal-image {
+    background: url('../images/prsn.png') center top no-repeat;
+    background-size: cover;
+    width: 160px;
+    height: 160px;
+    border-width: 3px;
+    border-style: solid;
+    border: 3px solid #2a5298;
+    border-radius: 50%;
+    animation: pimg 2s;
+}
+
+.personal-img {
+    width: 215px;
+    height: 260px;
+    background-color: rgb(var(--bs-info-rgb));
+    border: 1px solid rgb(var(--bs-info-rgb));
+    border-radius: unset;
+    padding: 7px;
+}
+
+#follow-me {
+    animation: followMe 3s ease-in;
+}
+
+@keyframes followMe {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.media-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.section-header {
+    height: 125px;
+}
+
+.task-list-item {
+    list-style: none;
+}
+
+.company-logo {
+    vertical-align: sub;
+}
+
+.company-img {
+    background-size: contain;
+    opacity: .2;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.company-bg-img {
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: contain;
+    background-color: rgba(255, 255, 255, 0.96);
+    background-blend-mode: lighten;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+.list-icon {
+    font-size: small;
+}
+
+#utravs {
+    background: url('../images/utravs.webp') center center no-repeat;
+}
+
+#card-utravs {
+    background-image: url('../images/utravs.webp');
+}
+
+#card-graph {
+    background-image: url('../images/graph.webp');
+}
+
+#card-pardis {
+    background-image: url('../images/pardis.png');
+}
+
+#graph {
+    background: url('../images/graph.webp') center center no-repeat;
+}
+
+#pardis {
+    background: url('../images/pardis.png') center center no-repeat;
+}
+
+
+.nav-item {
+    color: #2a5298;
+    border-bottom: 2px solid;
+    background: #f8f9fa;
+    padding: 0.2em 0em;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 32.8%;
+}
+
+.nav-item button {
+    letter-spacing: 1px;
+}
+
+@media (min-width: 768px) {
+    .personal-image {
+        width: 140px;
+        height: 140px;
+    }
+
+    .media-icon {
+        color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+    }
+
+    .media-icon:hover {
+        color: #2a5298 !important;
+        transform: scale(1.05);
+        transition: all ease-in-out .3s;
+    }
+
+    @keyframes name {
+        0% {
+            transform: translateX(0);
+        }
+
+        50% {
+            transform: translateX(70px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes pimg {
+        0% {
+            transform: translateX(50%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+}
